@@ -1,0 +1,61 @@
+.sign-footer {
+  margin-left: 93px;
+}
+
+.invitation {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.sign-footer-form {
+  display: flex;
+}
+
+.mail-label {
+  margin-right: 12px;
+}
+
+.email-input {  
+  padding-left: 16px;
+  border-radius: 4px;
+  width: 358px;
+  height: 50px;
+  outline: none;
+  background-color: transparent;
+  color: var(--primary-white-color);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+
+  &:focus {
+  border-color: var(--accent-color);
+  }
+}
+
+.email-input::placeholder {
+  font-size: 16px;
+  line-height: 1.25;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.submit-email-button {
+  display: flex;
+  width: 200px;
+  height: 50px;
+  padding: 10px 28px;
+  margin-left: 12px;
+  font-family: inherit;
+  font-weight: 700;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  border: none;
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+
+  &:hover,
+  &:focus {
+  background-color: var(--hero-button-color);
+  }
+}
+
+.footer-button-description {
+  margin-right: 10px;
+}

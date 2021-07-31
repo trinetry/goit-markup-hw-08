@@ -1,0 +1,39 @@
+.hero-container {
+  max-width: 1600px;
+}
+
+.hero-section {
+  flex-grow: 1;  
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url('../images/background/bcg.jpg');
+  color: var(--primary-white-color);  
+  background-color: var(--font-color);
+}
+
+.hero-theme {  
+  margin-bottom: 30px;
+  @include font(900, 44px, 1.36);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.hero-button {  
+  padding: 10px 32px;
+  @include font(700, 16px, 1.8);
+  width: 200px;
+  color: inherit;
+  background-color: var(--accent-color);
+
+  &:hover,
+  &:focus {
+  background-color: var(--hero-button-color);
+}
+}
