@@ -3,13 +3,25 @@
 }
 
 .command-list {
-  display: flex;
-  flex-direction: row;
   margin-left: -30px;
-  margin-right: -30px;
+  margin-bottom: -30px;
 
-  & .command-item {
-    flex-basis: calc(100% - 120px) / 4;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.command-list_item {
+  width: 100%;
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 60px) / 2);
+    margin-left: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 120px) / 4);
     margin-left: 30px;
   }
 }

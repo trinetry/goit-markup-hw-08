@@ -1,31 +1,93 @@
-.hero-container {
-  max-width: 1600px;
-}
+// .hero-container {
+//   max-width: 1600px;
+// }
 
 .hero-section {
-  flex-grow: 1;  
+  // max-width: 1600px;
+  // flex-grow: 1;
   text-align: center;
   background-size: cover;
   background-position: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url('../images/background/bcg.jpg');
-  color: var(--primary-white-color);  
+    url('../images/background/bcg-mobile@1x.jpg');
+
+  @media screen and (min-width: 320px) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url('../images/background/bcg-mobile@1x.jpg');
+  }
+
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 320px),
+    (min-resolution: 192dpi) and (min-width: 320px),
+    (min-resolution: 2dppx) and (min-width: 320px) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url('../images/background/bcg-mobile@2x.jpg');
+  }
+
+  @media screen and (min-width: 768px) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url('../images/background/bcg-tablet@1x.jpg');
+  }
+
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+    (min-resolution: 192dpi) and (min-width: 768px),
+    (min-resolution: 2dppx) and (min-width: 768px) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url('../images/background/bcg-tablet@2x.jpg');
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url('../images/background/bcg-desktop@1x.jpg');
+  }
+
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+    (min-resolution: 192dpi) and (min-width: 1200px),
+    (min-resolution: 2dppx) and (min-width: 1200px) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url('../images/background/bcg-desktop@2x.jpg');
+  }
+
+  color: var(--primary-white-color);
   background-color: var(--font-color);
 }
 
-.hero-theme {  
+.hero-theme {
   margin-bottom: 30px;
-  @include font(900, 44px, 1.36);
+  @include font(900, 26px, 1.36);
+
+  @media screen and (min-width: 1200px) {
+    @include font(900, 44px, 1.36);
+  }
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
 
-.hero-button {  
+.hero-button {
   padding: 10px 32px;
   @include font(700, 16px, 1.8);
   width: 200px;
@@ -34,6 +96,6 @@
 
   &:hover,
   &:focus {
-  background-color: var(--hero-button-color);
-}
+    background-color: var(--hero-button-color);
+  }
 }

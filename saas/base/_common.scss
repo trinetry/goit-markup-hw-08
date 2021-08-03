@@ -13,6 +13,7 @@ ul {
 
 img {
   display: block;
+  width: 100%;
 }
 
 .list {
@@ -32,7 +33,7 @@ img {
   font-size: 16px;
   border-radius: 4px;
   transition: background-color var(--timing) var(--transition-function),
-  color var(--timing) var(--transition-function);
+    color var(--timing) var(--transition-function);
   border-color: transparent;
 }
 
@@ -45,6 +46,11 @@ body {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
