@@ -336,10 +336,6 @@ body {
   background-color: var(--hero-button-color);
 }
 
-.sign-footer {
-  margin-left: 93px;
-}
-
 .invitation {
   display: block;
   margin-bottom: 20px;
@@ -375,12 +371,12 @@ body {
 }
 
 .submit-email-button {
+  align-items: center;
   display: flex;
   width: 200px;
   height: 50px;
   padding: 10px 28px;
   margin-top: 20px;
-  margin: 0 auto;
   font-family: inherit;
   font-weight: 700;
   line-height: 1.87;
@@ -392,6 +388,12 @@ body {
 
 .submit-email-button:hover, .submit-email-button:focus {
   background-color: var(--hero-button-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .submit-email-button {
+    margin: 0 20px;
+  }
 }
 
 .footer-button-description {
@@ -1012,10 +1014,6 @@ body {
   background-color: var(--font-color);
 }
 
-.footer-container {
-  display: block;
-}
-
 @media screen and (max-width: 1199px) {
   .footer-container {
     text-align: center;
@@ -1025,13 +1023,6 @@ body {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer-container {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .footer-container {
     flex-wrap: wrap;
     justify-content: space-around;
   }
@@ -1102,6 +1093,8 @@ body {
 }
 
 .invitation {
+  display: block;
+  margin-bottom: 20px;
   font-weight: 700;
   font-size: 20px;
   line-height: 1.14;
@@ -1182,10 +1175,6 @@ body {
   }
 }
 
-.sign-footer-form {
-  display: flex;
-}
-
 @media screen and (max-width: 1199px) {
   .sign-footer-form {
     flex-direction: column;
@@ -1196,7 +1185,7 @@ body {
 .projects-list {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 .projects-list .projects-item:not(:last-child) {
@@ -1211,12 +1200,14 @@ body {
   .projects-list {
     text-align: center;
     justify-content: center;
+    margin-bottom: 40px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .projects-list {
     margin-bottom: 50px;
+    margin-left: -30px;
   }
 }
 
@@ -1234,7 +1225,8 @@ body {
 
 @media screen and (min-width: 1200px) {
   .our-projects-list {
-    margin-top: 50px;
+    margin-top: -30px;
+    margin-left: -30px;
   }
 }
 
@@ -1257,8 +1249,9 @@ body {
 
 @media screen and (min-width: 1200px) {
   .our-projects-item {
-    flex-basis: calc((100% - 60px) / 3);
-    margin-right: 30px;
+    flex-basis: calc((100% - 90px) / 3);
+    margin-top: 30px;
+    margin-left: 30px;
   }
 }
 
