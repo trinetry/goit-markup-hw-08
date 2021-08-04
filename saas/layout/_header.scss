@@ -34,18 +34,27 @@
 
 .contact-list {
   display: none;
-  margin-left: auto;
-  align-items: center;
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-left: 84px;
+    margin-left: auto;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    margin-left: auto;
   }
 
   & .contact_item:not(:last-child) {
-    margin-right: 50px;
+    margin-bottom: 10px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    .contact_item:not(:last-child) {
+      margin-right: 50px;
+    }
   }
 }
 
@@ -87,8 +96,8 @@
 .header_contact-link {
   display: flex;
   align-items: center;
-  padding-bottom: 32px;
-  padding-top: 32px;
+  // padding-bottom: 32px;
+  // padding-top: 32px;
   @include font(500, 14px, 1.14);
   text-decoration: none;
   color: var(--paragraph-text-color);
@@ -99,6 +108,10 @@
   &:focus {
     fill: var(--accent-color);
     color: var(--accent-color);
+  }
+
+  &:not(:last-child) {
+    padding-bottom: 30px;
   }
 }
 
@@ -141,6 +154,9 @@
 
 .mobile-menu {
   position: fixed;
+  visibility: none;
+  pointer-events: none;
+  opacity: 0;
   background-color: var(--primary-white-color);
   width: 100vw;
   height: 100vh;
@@ -156,8 +172,9 @@
     justify-content: space-between;
   }
   &.is-hidden {
-    opacity: 0;
-    pointer-events: none;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
   }
 }
 
