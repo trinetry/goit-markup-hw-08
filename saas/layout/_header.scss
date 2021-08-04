@@ -1,8 +1,9 @@
 .header {
   border-bottom: 1px solid #eeeeee;
+  padding: 15px;
 
-  @media screen and (min-width: 768px) {
-    padding: 21px 0;
+  @media screen and (min-width: 1200px) {
+    padding: 25px;
   }
 
   &-container {
@@ -137,7 +138,7 @@
   border: none;
   position: absolute;
   right: 0;
-  top: 45px;
+  top: 20px;
 
   @media screen and (min-width: 768px) {
     display: none;
@@ -147,14 +148,16 @@
 .menu-close {
   position: absolute;
   right: 0;
-  top: 0;
+  top: -30px;
   background-color: unset;
   border: none;
 }
 
 .mobile-menu {
   position: fixed;
-  visibility: none;
+  // visibility: none;
+  visibility: hidden;
+  z-index: 100;
   pointer-events: none;
   opacity: 0;
   background-color: var(--primary-white-color);

@@ -109,9 +109,6 @@
 .social-footer {
   display: flex;
   margin-top: 60px;
-  @media screen and (min-width: 768px) {
-    margin-left: 70px;
-  }
 
   @media screen and (min-width: 768px) {
     display: block;
@@ -122,6 +119,10 @@
   @media screen and (max-width: 767px) {
     display: flex;
     flex-direction: column;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 70px;
   }
 }
 

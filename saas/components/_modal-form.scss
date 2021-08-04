@@ -1,5 +1,5 @@
 .modal-title {
-  margin-bottom: 12px;  
+  margin-bottom: 12px;
   text-align: center;
   font-weight: 700;
   font-size: 20px;
@@ -31,12 +31,12 @@
   transition: border-color var(--timing) var(--transition-function);
 
   &:focus {
-  outline: none;
-  border-color: var(--accent-color);
+    outline: none;
+    border-color: var(--accent-color);
   }
 
   &:focus + .user-icon {
-  fill: var(--accent-color);
+    fill: var(--accent-color);
   }
 }
 
@@ -71,15 +71,15 @@
   transition: border-color var(--timing) var(--transition-function);
 
   &:focus {
-  outline: none;
-  border-color: var(--accent-color);
+    outline: none;
+    border-color: var(--accent-color);
   }
 
   &::placeholder {
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.01em;
-  color: rgba(117, 117, 117, 0.5);
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
   }
 }
 
@@ -93,13 +93,13 @@
   clip: rect(0 0 0 0);
   overflow: hidden;
 
-  &:checked + .checkbox-icon {  
-  background-size: contain;
-  background-origin: border-box;
-  background-color: var(--accent-color);
-  border-color: var(--accent-color);
-  background-image: url(../images/icon-check.svg);
-  transition: background-color var(--transition-function) var(--timing);
+  &:checked + .checkbox-icon {
+    background-size: contain;
+    background-origin: border-box;
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+    background-image: url(../images/icon-check.svg);
+    transition: background-color var(--transition-function) var(--timing);
   }
 }
 
@@ -120,10 +120,15 @@
   align-items: center;
   margin-bottom: 30px;
   font-weight: normal;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   color: var(--paragraph-text-color);
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 2;
+  }
 }
 
 .modal-form-label-link {
@@ -146,6 +151,6 @@
 
   &:focus,
   &:hover {
-  background-color: var(--hero-button-color);
+    background-color: var(--hero-button-color);
   }
 }
